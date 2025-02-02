@@ -1,0 +1,830 @@
+/* ==========================Header===================== */
+.las_header_web{
+    position: fixed;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index: 99;
+}
+.las_header_strip{
+    background:#000000;
+    align-items: center;
+    width:100%;
+}
+.las_header_strip .row{
+    align-items: center;
+}
+.las_header_strip_left :where(a){
+    align-items: center;
+    margin: 0px 20px;
+}
+.las_header_strip_left :where(i){
+    margin:0px 5px;
+    padding:0px 5px;
+    color:#ffffff;
+}
+.las_header_strip_left :where(p){
+    color:#ffffff;
+}
+.las_header_strip_left_email:hover i,
+.las_header_strip_left_email:hover p {
+    color: #71AD01;
+}
+.las_header_strip_left_phone:hover i,
+.las_header_strip_left_phone:hover p {
+    color: #71AD01;
+}
+.las_header_strip_right{
+    display: flex;
+    justify-content: end;
+}
+.las_header_strip_right :where(a){
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 6px;
+    margin: 5px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.las_header_strip_right :where(a):hover{
+    background-color: #71AD01;
+}
+.las_header_strip_right :where(i){
+    color:#000000;
+    font-size: 20px;
+}
+
+/* --------------------------- */
+
+.las_header_menu{
+    background:#ffffff;
+    padding:10px 0px;
+}
+.las_header_menu .row{
+    align-items: center;
+}
+.las_header_menu_logo img{
+    width:50%;
+    margin:0px 30px
+}
+.las_header_menu_list{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+.las_header_menu_list :where(a){
+    padding:10px;
+    font-size: 16px;
+}
+.las_header_menu_list :where(a):hover{
+    color: #71AD01 !important;
+}
+
+/* ----------------------------- */
+
+.las_header_app{
+    display:none;
+    position:fixed;
+    top:0px;
+    width: 100%;
+    z-index: 99;
+    background:#ffffff;
+}
+.las_app_menu{
+    width:100%;
+    display:flex;
+    align-items: center;
+    padding:10px;
+}
+.las_app_menu :where(a){
+    width:50%;
+}
+.las_app_menu img{
+    width:40%;
+}
+.las_app_menu i{
+    font-size: 24px;
+    float: right;
+}
+
+/* ----------------------------- */
+
+#Enquiry_Form_Modal img{
+    width:15%;
+}
+.las_enduiry_form .modal{
+    --bs-modal-width:1000px;
+}
+.las_enduiry_form .las_close_btn{
+    width:200px !important;
+}
+.las_ef_contact_widget .col-lg-3{
+    padding:10px;
+}
+.las_enduiry_form .las_ef_grid{
+    background:#000000;
+    border-radius: 10px;
+    padding:10px;
+    text-align: center;
+    height:100%;
+    border: 5px solid #000000;
+    transition:.5s;
+}
+.las_enduiry_form .las_ef_grid:hover{
+    border: 5px solid #71AD01;
+    border-radius: 0px;
+}
+.las_enduiry_form .las_ef_grid i{
+    font-size: 30px;
+    color:#ffffff;
+    padding:20px;
+}
+.las_enduiry_form .las_ef_grid h3{
+    color:#ffffff;
+    font-size: 24px;
+}
+.las_enduiry_form .las_ef_grid address{
+    color:#ffffff;
+    opacity: .7;
+    line-height: 20px;
+    font-size: 14px;
+}
+.las_enduiry_form .las_ef_grid a{
+    color:#fff !important;
+    opacity: .7;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+
+.las_ef_form{
+    background:#ececec;
+    margin:30px auto;
+    padding:20px;
+}
+.las_ef_row1{
+    display:flex;
+}
+.las_ef_row1 div{
+    width:50%;
+}
+.las_ef_row1 div input{
+    width:98%;
+    border-radius:50px;
+    border:1px solid lightgrey;
+    text-indent: 10px;
+    transition: 0.5s;
+}
+.las_ef_row1 div input:hover,
+.las_ef_row1 div input:focus,
+.las_ef_row1 div input:active{
+    outline:none;
+    border:1px solid #71AD01;
+    box-shadow: none;
+}
+.las_ef_form textarea{
+    width:99%;
+    border-radius:10px;
+    border:1px solid lightgrey;
+    text-indent: 10px;
+    transition: 0.5s;
+    box-shadow: none !important;
+}
+.las_ef_row1 div textarea:hover,
+.las_ef_row1 div textarea:focus,
+.las_ef_row1 div textarea:active{
+    outline:none;
+    border:1px solid #71AD01 !important;
+    box-shadow: none !important;
+}
+.las_ef_btn{
+    margin-top:20px;
+}
+.las_ef_btn button{
+    margin:5px;
+}
+
+/* ------------------------------ */
+
+.offcanvas{
+    width:60% !important;
+}
+.offcanvas-header{
+    border-bottom: 1px solid lightgrey;
+}
+.offcanvas-body{
+    padding:0px !important;
+}
+.offcanvas ul{
+    margin:5px 0px;
+    padding:5px 0px;
+}
+.offcanvas ul li{
+    padding: 10px 15px;
+    background: #efefef;
+    margin: 2px 0px;
+}
+.offcanvas ul li a{
+    font-size: 15px;
+}
+.offcanvas-body i{
+    margin-right:10px;
+    font-size: 15px;
+}
+
+/* ==========================Hero Section===================== */
+
+.las_hero_section{
+    background-image: url('../images/las_home_hero_img.jpg');
+    background-attachment: fixed;
+    width:100%;
+    height:60vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    margin-top:150px;
+    display: flex;
+    align-items: center;
+}
+.las_hero_content .las_hero_cnt_p1{
+    color:#ffffffd1;
+    text-align: center !important;
+    font-size: 24px;
+    letter-spacing: 8px;
+}
+.las_hero_content h1{
+    color:#ffffff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #71AD01;
+}
+.las_hero_content .las_hero_cnt_p2{
+    color:#ffffff;
+    text-align: center !important;
+}
+.las_hero_btns{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.las_hero_btns :where(a){
+    margin: 0px 5px;
+    margin-top:20px;
+}
+
+/* ==========================what we offer Section===================== */
+.las_what_we_offer{
+    padding:100px 0px;
+}
+.las_service_heading .las_h{
+    font-size: 30px;
+    text-align: center;
+}
+.las_service_heading .las_p{
+    text-align: center;
+    padding:0px 120px;
+    margin-top: 20px;
+}
+
+.las_service_card{
+    box-shadow: 0px 0px 20px #c0c0c0;
+    border-radius: 20px;
+    text-align: center;
+    margin-top:80px;
+    height: 90%;
+    padding: 30px 15px;
+    transition:0.5s;
+}
+.las_service_card:hover{
+    box-shadow: none;
+    border:1px solid  #71AD01;
+    transition:0.5s;
+}
+.las_service_icon{
+    width:70px;
+    height:70px;
+    background:#000000;
+    border-radius: 50px;
+    display:flex;
+    justify-content: center;
+    margin: 0px auto 20px auto;
+}
+.las_service_card p{
+    height:55%;
+    font-size: 15px !important;
+}
+.las_service_icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.las_service_icon img{
+    width:40px;
+    height:40px;
+}
+
+/* ==========================Who we are Section===================== */
+
+.las_who_we_are{
+    width:100%;
+    background:url('../images/las_home_about_img.jpg');
+    background-attachment: fixed;
+    height:auto;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:50px 0px;
+    margin:50px 0px;
+}
+.las_who_we_are .las_h{
+    color:#ffffff;
+    text-align: center;
+}
+.las_who_we_are .las_p{
+    color:#bebebe;
+    text-align: center;
+    padding:10px 10px;
+    margin:5px;
+}
+.las_cound_grid h1{
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+}
+.las_cound_grid p{
+    font-weight: 300;
+    text-align: center;
+}
+.las_count{
+    padding:50px 150px;
+}
+.las_about_btn button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px auto;
+}
+
+/* ==========================FAQ Section===================== */
+
+.las_faq{
+    padding:50px 0px;
+}
+.las_faq_heading .las_h{
+    font-size: 30px;
+    text-align: center;
+}
+.las_faq_section{
+    padding:40px 100px;
+    margin:5px;
+}
+#accordion .card{
+    border:1px solid lightgrey;
+    margin:5px 0px;
+    border-radius: 35px;
+}
+#accordion .card-header{
+    background: #000000;
+    border: none;
+    border-radius: 50px;
+    padding:15px 20px;
+    font-size: 18px;
+}
+#accordion .card-header{
+    color:#ffffff !important;
+    text-align: left;
+}
+.card-header:not(.collapsed) {
+    background-color: green !important;
+    color: white;
+}
+#accordion .card-body{
+    padding: 30px 40px;
+    color: #707070;
+}
+
+/* ==========================Video Section===================== */
+
+.las_video_section{
+    width:100%;
+    /* background-image: url('../images/las_home_video_bg_img.jpg'); */
+    background:#f7f7f7;
+    height: fit-content;
+    padding:50px 0px;
+}
+.las_video_sec_heading h2{
+    text-align: center;
+}
+.las_videos{
+    padding:40px 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.las_videos video{
+    width:100%;
+    height:600px;
+    border-radius: 15px;
+}
+.las_video_grid{
+    margin:10px;
+    padding:5px;
+    border-radius: 15px;
+}
+.las_video_section button{
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    align-items: center;
+}
+
+/* ==========================Footer Section===================== */
+
+.las_footer_sec{
+    background:#000000;
+    padding:30px 0px;
+    margin:10px 0px;
+}
+.las_footer_logo img{
+    width:150px;
+    margin-bottom:15px;
+}
+.las_footer_sec a{
+    color: #c5c5c5 !important;
+}
+.las_footer_cnt{
+    padding-right:30px;
+}
+.las_footer_sec p{
+    color: #c5c5c5 !important;
+    font-size: 15px !important;
+    text-align: justify;
+}
+.las_footer_sec h4{
+    color:#ffffff !important;
+}
+.las_footer_sec ul{
+    margin:10px 0px;
+    padding: 0px;
+}
+.las_footer_sec ul li{
+    list-style: none;
+    padding:2px 0px;
+    margin:2px 0px;
+    display:flex;
+    align-items: center;
+}
+.las_footer_sec i {
+    font-size: 14px;
+    margin-right:10px;
+    color:#c5c5c5;
+}
+.las_footer_QL{
+    padding-left:10px;
+    margin-left:20px;
+}
+.las_footer_SM{
+    display:flex;
+    align-items: center;
+    margin-bottom:20px;
+    padding-bottom:5px;
+}
+.las_footer_SM a i{
+    font-size: 22px;
+    color:#000000;
+    margin:0px;
+}
+.las_footer_SM :where(a){
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 5px;
+    margin-right: 10px;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+}
+
+.las_footer_SM :where(a):hover{
+    background-color: #71AD01;
+}
+
+
+/* ==========================Media Query===================== */
+
+@media only screen and (max-width:800px){
+    .las_header_web{
+        display:none;
+    }
+    .las_header_app{
+        display:block;
+    }
+    .las_service_heading .las_p{
+        padding:0px;
+    }
+    .las_faq_section{
+        padding:40px 10px;
+    }
+    .las_videos{
+        display:block;
+    }
+    .las_videos video{
+        width:100%;
+        height:400px;
+    }
+    .las_footer_QL{
+        padding-left:0;
+        margin-left:0;
+    }
+   
+}
+@media only screen and (min-width:1201px) and (max-width:1400px){
+    .las_service_card .las_h{
+        font-size: 18px;
+    }
+    .las_service_card p {
+        height: 55%;
+        font-size: 13px !important;
+    }
+}
+@media only screen and (min-width:1001px) and (max-width:1200px){
+    .las_service_card .las_h{
+        font-size: 18px;
+    }
+    .las_service_card p {
+        height: 60%;
+        font-size: 13px !important;
+    }
+    .las_videos video {
+        height: 500px;
+    }
+}
+@media only screen and (min-width:801px) and (max-width:1000px){
+    .las_header_strip_left :where(a) {
+        margin: 0px 2px;
+    }
+    .las_header_menu_logo img{
+        width: 70%;
+    }
+    .las_header_menu_list :where(a){
+        padding:5px;
+        font-size: 15px;
+    }
+    #Enquiry_Form_Modal img{
+        width:17%;
+    }
+    .las_hero_section{
+        height:40vh;
+        margin-top:125px;
+    }
+    .las_service_heading .las_p{
+        padding:0px;
+    }
+    .las_service_heading .las_h {
+        font-size: 24px;
+    }
+    .las_service_heading .las_p {
+        font-size: 15px;
+    }
+    .las_service_card .las_h{
+        font-size: 18px;
+    }
+    .las_service_card .las_p{
+        font-size: 13px !important;
+    }
+    .las_who_we_are .las_p {
+        padding: 10px 50px;
+    }
+    .las_faq_section {
+        padding: 20px 10px;
+    }
+    .las_videos video {
+        height: 350px;
+    }
+}
+@media only screen and (min-width:601px) and (max-width:800px){
+    #Enquiry_Form_Modal img{
+        width:25%;
+    }
+    .las_enduiry_form .las_close_btn {
+        width: 400px !important;
+    }
+    .las_app_menu img{
+        width:30%;
+    }
+    .las_app_menu i{
+        font-size: 26px;
+    }
+    .las_hero_section{
+        height:30vh;
+        margin-top:80px;
+    }
+    .las_hero_content .las_hero_cnt_p1{
+        font-size: 18px;
+        letter-spacing: 6px;
+    }
+    .las_hero_content h1{
+        font-size: 40px;
+    }
+    .las_hero_content .las_hero_cnt_p2{
+        font-size: 15px !important;
+    }
+    .las_service_heading .las_h {
+        font-size: 24px;
+    }
+    .las_service_heading .las_p {
+        font-size: 13px;
+    }
+    .las_service_card .las_h{
+        font-size: 20px;
+    }
+    .las_service_card .las_p{
+        font-size: 13px;
+    }
+    .las_who_we_are .las_p {
+        padding: 10px 40px;
+    }
+    .las_ef_row1{
+        display:block;
+    }
+    .las_ef_row1 div{
+        width:100%;
+    }
+    .las_ef_row1 div input{
+        width:100%;
+    }
+    .las_faq_section {
+        padding: 20px 10px;
+    }
+}
+@media only screen and (min-width:451px) and (max-width:600px){
+    .las_app_menu img{
+        width:45%;
+    }
+    .las_app_menu i{
+        font-size: 24px;
+    }
+    .las_hero_section{
+        height:35vh;
+        margin-top:75px;
+    }
+    .las_hero_content .las_hero_cnt_p1{
+        font-size: 18px;
+        letter-spacing: 6px;
+    }
+    .las_hero_content h1{
+        font-size: 40px;
+    }
+    .las_hero_content .las_hero_cnt_p2{
+        font-size: 14px !important;
+        padding:0px 40px !important;
+    }
+    .las_what_we_offer {
+        padding: 30px 0px;
+    }
+    .las_service_card {
+        margin: 20px auto;
+        width: 80%;
+        height: auto;
+        padding: 20px 15px;
+        box-shadow: 0px 0px 10px #c0c0c0;
+    }
+    .las_service_card p {
+        height: auto;
+        font-size: 13px !important;
+    }
+    .las_service_heading{
+        margin-bottom:30px;
+    }
+    .las_service_card_btn {
+        margin: 20px 0px 10px 0px;
+    }
+    .las_service_heading{
+        padding: 0px 30px;
+    }
+    .las_service_heading .las_h {
+        font-size: 26px;
+    }
+    .las_who_we_are .las_p {
+        padding: 10px 30px;
+    }
+    .las_count {
+        padding: 50px 0px;
+    }
+    .las_ef_row1{
+        display:block;
+    }
+    .las_ef_row1 div{
+        width:100%;
+    }
+    .las_ef_row1 div input{
+        width:100%;
+    }
+    #Enquiry_Form_Modal img{
+        width:30%;
+    }
+    .las_enduiry_form .las_close_btn {
+        width: 500px !important;
+    }
+    .las_faq {
+        padding: 0px 0px;
+    }
+    .las_faq_heading .las_h {
+        font-size: 22px;
+    }
+    #accordion .card-header {
+        font-size: 13px;
+    }
+    #accordion .card-body {
+        font-size: 12px;
+        padding: 20px;
+    }
+}
+@media only screen  and (max-width:450px){
+    .las_app_menu i{
+        font-size: 24px;
+    }
+    .las_app_menu img{
+        width:55%;
+    }
+    .las_hero_section{
+        height:35vh;
+        margin-top:75px;
+    }
+    .las_hero_content .las_hero_cnt_p1{
+        font-size: 16px;
+        letter-spacing: 6px;
+    }
+    .las_hero_content h1{
+        font-size: 35px;
+    }
+    .las_hero_content .las_hero_cnt_p2{
+        font-size: 13px !important;
+        padding:0px 40px !important;
+    }
+    .las_what_we_offer {
+        padding: 30px 0px;
+    }
+    .las_service_card {
+        margin: 20px auto;
+        width: 80%;
+        height: auto;
+        padding: 20px 15px;
+        box-shadow: 0px 0px 10px #c0c0c0;
+    }
+    .las_service_card p {
+        height: auto;
+        font-size: 13px !important;
+    }
+    .las_service_heading{
+        margin-bottom:30px;
+    }
+    .las_service_card_btn {
+        margin: 20px 0px 10px 0px;
+    }
+    .las_service_heading{
+        padding: 0px 30px;
+    }
+    .las_service_heading .las_h {
+        font-size: 26px;
+    }
+    .las_who_we_are .las_p {
+        padding: 10px 30px;
+    }
+    .las_count {
+        padding: 50px 0px;
+    }
+    .las_ef_row1{
+        display:block;
+    }
+    .las_ef_row1 div{
+        width:100%;
+    }
+    .las_ef_row1 div input{
+        width:100%;
+    }
+    #Enquiry_Form_Modal img{
+        width:35%;
+    }
+    .las_enduiry_form .las_close_btn {
+        width: 600px !important;
+    }
+    .las_faq {
+        padding: 0px 0px;
+    }
+    .las_faq_heading .las_h {
+        font-size: 22px;
+    }
+    #accordion .card-header {
+        font-size: 13px;
+    }
+    #accordion .card-body {
+        font-size: 12px;
+        padding: 20px;
+    }
+}
