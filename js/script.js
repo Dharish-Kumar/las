@@ -1,7 +1,7 @@
 // Auto visible enquery popup
 document.addEventListener('DOMContentLoaded', function () {
   const path = window.location.pathname.replace(/\/$/, ""); // Remove trailing slash if any
-  if (path === "" || path === "/" || path.endsWith("/index.html")) {
+  if (path === "" || path === "/" || path.endsWith("../home.html")) {
       setTimeout(function () {
           const modalElement = document.getElementById('Enquiry_Form_Modal');
           if (modalElement) {

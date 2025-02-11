@@ -39,22 +39,26 @@
     justify-content: end;
 }
 .las_header_strip_right :where(a){
-    background-color: #ffffff;
-    border-radius: 50px;
-    padding: 6px;
-    margin: 5px;
     display: flex;
-    width: 30px;
-    height: 30px;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 .las_header_strip_right :where(a):hover{
     background-color: #71AD01;
 }
 .las_header_strip_right :where(i){
+    background-color: #ffffff;
+    border-radius: 50px;
     color:#000000;
     font-size: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    margin: 5px;
+}
+.las_header_strip_right p{
+    color:#ffffff;
 }
 
 /* --------------------------- */
@@ -78,9 +82,10 @@
 .las_header_menu_list :where(a){
     padding:10px;
     font-size: 16px;
-}
-.las_header_menu_list :where(a):hover{
-    color: #71AD01 !important;
+
+    &:hover{
+        color: #71AD01 !important;
+    }
 }
 
 /* ----------------------------- */
@@ -121,91 +126,31 @@
 .las_enduiry_form .las_close_btn{
     width:200px !important;
 }
+.las_ef_contact_widget{
+    width:50%;
+    margin:0px auto;
+}
 .las_ef_contact_widget .col-lg-3{
     padding:10px;
 }
-.las_enduiry_form .las_ef_grid{
-    background:#000000;
-    border-radius: 10px;
-    padding:10px;
+.las_eq_grid{
+    padding:30px;
+    transition: 0.5s;
+
+    &:hover{
+        box-shadow: 0px 0px 10px #aaaaaa;
+        border-radius: 20px;
+    }
+}
+.las_eq_grid p{
     text-align: center;
-    height:100%;
-    border: 5px solid #000000;
-    transition:.5s;
 }
-.las_enduiry_form .las_ef_grid:hover{
-    border: 5px solid #71AD01;
-    border-radius: 0px;
-}
-.las_enduiry_form .las_ef_grid i{
-    font-size: 30px;
-    color:#ffffff;
-    padding:20px;
-}
-.las_enduiry_form .las_ef_grid h3{
-    color:#ffffff;
-    font-size: 24px;
-}
-.las_enduiry_form .las_ef_grid address{
-    color:#ffffff;
-    opacity: .7;
-    line-height: 20px;
-    font-size: 14px;
-}
-.las_enduiry_form .las_ef_grid a{
-    color:#fff !important;
-    opacity: .7;
-    line-height: 20px;
-    font-size: 14px;
-}
-
-
-.las_ef_form{
-    background:#ececec;
-    margin:30px auto;
-    padding:20px;
-}
-.las_ef_row1{
+.las_eq_grid img{
+    width:70% !important;
     display:flex;
+    margin:0px auto;
 }
-.las_ef_row1 div{
-    width:50%;
-}
-.las_ef_row1 div input{
-    width:98%;
-    border-radius:50px;
-    border:1px solid lightgrey;
-    text-indent: 10px;
-    transition: 0.5s;
-}
-.las_ef_row1 div input:hover,
-.las_ef_row1 div input:focus,
-.las_ef_row1 div input:active{
-    outline:none;
-    border:1px solid #71AD01;
-    box-shadow: none;
-}
-.las_ef_form textarea{
-    width:99%;
-    border-radius:10px;
-    border:1px solid lightgrey;
-    text-indent: 10px;
-    transition: 0.5s;
-    box-shadow: none !important;
-}
-.las_ef_row1 div textarea:hover,
-.las_ef_row1 div textarea:focus,
-.las_ef_row1 div textarea:active{
-    outline:none;
-    border:1px solid #71AD01 !important;
-    box-shadow: none !important;
-}
-.las_ef_btn{
-    margin-top:20px;
-}
-.las_ef_btn button{
-    margin:5px;
-}
+
 
 /* ------------------------------ */
 
@@ -276,6 +221,48 @@
     margin-top:20px;
 }
 
+/* -------------------- */
+
+#Banner_Knowmore_Modal img{
+    width:15%;
+}
+.las_Knowmore .modal{
+    --bs-modal-width:1000px;
+}
+.las_Knowmore .las_close_btn{
+    width:200px !important;
+}
+.las_km_details {
+    width: 90%;
+    height: 500px;
+    overflow-y: scroll; /* Always show scrollbar */
+    background: #f3f3f3;
+    margin: 0px auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+}
+
+/* Custom Scrollbar Design */
+.las_km_details::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.las_km_details::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+    border-radius: 5px; /* Rounded corners for the track */
+}
+
+.las_km_details::-webkit-scrollbar-thumb {
+    background: #d6d6d6 !important; /* Color of the scrollbar thumb */
+    border-radius: 5px !important; /* Rounded corners for the thumb */
+}
+
+.las_km_details::-webkit-scrollbar-thumb:hover {
+    background: #71AD01 !important; /* Color of the thumb on hover */
+}
+
+
 /* ==========================what we offer Section===================== */
 .las_what_we_offer{
     padding:100px 0px;
@@ -291,7 +278,11 @@
 }
 
 .las_service_card{
-    box-shadow: 0px 0px 20px #c0c0c0;
+    background-image: url('../images/las_service_grid_pattern.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0px 0px 0px #c0c0c0;
     border-radius: 20px;
     text-align: center;
     margin-top:80px;
@@ -300,9 +291,10 @@
     transition:0.5s;
 }
 .las_service_card:hover{
-    box-shadow: none;
+    box-shadow:  0px 0px 25px #c0c0c0;;
     border:1px solid  #71AD01;
     transition:0.5s;
+    height: 95%
 }
 .las_service_icon{
     width:70px;
@@ -350,6 +342,12 @@
     padding:10px 10px;
     margin:5px;
 }
+.las_cound_grid{
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
 .las_cound_grid h1{
     font-weight: 800;
     font-size: 60px;
@@ -361,6 +359,9 @@
 }
 .las_count{
     padding:50px 150px;
+}
+.las_count img{
+    width:70px;
 }
 .las_about_btn button{
     display:flex;
@@ -454,13 +455,13 @@
     margin-bottom:15px;
 }
 .las_footer_sec a{
-    color: #c5c5c5 !important;
+    color: #ffffff !important;
 }
 .las_footer_cnt{
     padding-right:30px;
 }
 .las_footer_sec p{
-    color: #c5c5c5 !important;
+    color: #f6f6f6 !important;
     font-size: 15px !important;
     text-align: justify;
 }
