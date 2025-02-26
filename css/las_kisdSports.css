@@ -116,6 +116,7 @@
 
 /* ----------------------------- */
 
+
 #Enquiry_Form_Modal img{
     width:15%;
 }
@@ -125,91 +126,31 @@
 .las_enduiry_form .las_close_btn{
     width:200px !important;
 }
+.las_ef_contact_widget{
+    width:50%;
+    margin:0px auto;
+}
 .las_ef_contact_widget .col-lg-3{
     padding:10px;
 }
-.las_enduiry_form .las_ef_grid{
-    background:#000000;
-    border-radius: 10px;
-    padding:10px;
+.las_eq_grid{
+    padding:30px;
+    transition: 0.5s;
+
+    &:hover{
+        box-shadow: 0px 0px 10px #aaaaaa;
+        border-radius: 20px;
+    }
+}
+.las_eq_grid p{
     text-align: center;
-    height:100%;
-    border: 5px solid #000000;
-    transition:.5s;
 }
-.las_enduiry_form .las_ef_grid:hover{
-    border: 5px solid #71AD01;
-    border-radius: 0px;
-}
-.las_enduiry_form .las_ef_grid i{
-    font-size: 30px;
-    color:#ffffff;
-    padding:20px;
-}
-.las_enduiry_form .las_ef_grid h3{
-    color:#ffffff;
-    font-size: 24px;
-}
-.las_enduiry_form .las_ef_grid address{
-    color:#ffffff;
-    opacity: .7;
-    line-height: 20px;
-    font-size: 14px;
-}
-.las_enduiry_form .las_ef_grid a{
-    color:#fff !important;
-    opacity: .7;
-    line-height: 20px;
-    font-size: 14px;
-}
-
-
-.las_ef_form{
-    background:#ececec;
-    margin:30px auto;
-    padding:20px;
-}
-.las_ef_row1{
+.las_eq_grid img{
+    width:70% !important;
     display:flex;
+    margin:0px auto;
 }
-.las_ef_row1 div{
-    width:50%;
-}
-.las_ef_row1 div input{
-    width:98%;
-    border-radius:50px;
-    border:1px solid lightgrey;
-    text-indent: 10px;
-    transition: 0.5s;
-}
-.las_ef_row1 div input:hover,
-.las_ef_row1 div input:focus,
-.las_ef_row1 div input:active{
-    outline:none;
-    border:1px solid #71AD01;
-    box-shadow: none;
-}
-.las_ef_form textarea{
-    width:99%;
-    border-radius:10px;
-    border:1px solid lightgrey;
-    text-indent: 10px;
-    transition: 0.5s;
-    box-shadow: none !important;
-}
-.las_ef_row1 div textarea:hover,
-.las_ef_row1 div textarea:focus,
-.las_ef_row1 div textarea:active{
-    outline:none;
-    border:1px solid #71AD01 !important;
-    box-shadow: none !important;
-}
-.las_ef_btn{
-    margin-top:20px;
-}
-.las_ef_btn button{
-    margin:5px;
-}
+
 
 /* ------------------------------ */
 
