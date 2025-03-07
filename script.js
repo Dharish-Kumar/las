@@ -70,80 +70,99 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //contact submit thank you page
 
-document.addEventListener("DOMContentLoaded", function () {
-    let form = document.getElementById("contactForm"); // Ensure correct form selection
+    document.addEventListener("DOMContentLoaded", function () {
+        let form = document.getElementById("contactForm");
 
-    if (!form) {
-        console.error("Form not found!");
-        return;
-    }
+        if (!form) {
+            console.error("Form not found!");
+            return;
+        }
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent default form submission
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent default form submission
 
-        let formData = new FormData(form); // Ensure formData is constructed from a form element
-        let actionUrl = "https://script.google.com/macros/s/AKfycbzTpC-evoCj5Qm8IabAnVcDdfGCKams1G32R9U76CaFVpvYediTPeBbRwi48y_xc7bx/exec";
+            let formData = new FormData(form);
+            let actionUrl = "https://script.google.com/macros/s/AKfycbzTpC-evoCj5Qm8IabAnVcDdfGCKams1G32R9U76CaFVpvYediTPeBbRwi48y_xc7bx/exec";
 
-        fetch(actionUrl, { method: "POST", body: formData })
-            .then(response => response.json())
-            .then(data => {
-                if (data.result === "success") {
-                    showSuccessMessage(); // Show success message
-                    form.reset(); // Reset the form fields
-
-                    // Redirect to Contact Us page after 2 seconds
-                    setTimeout(() => {
-                        window.location.href = "../contactUs.html"; // Change this to your actual Contact Us page URL
-                    }, 2000);
-                } else {
+            fetch(actionUrl, { method: "POST", body: formData })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.result === "success") {
+                        form.reset();
+                        showSuccessMessage(); // Show success message
+                        
+                        // Ensure message stays visible for 2s before redirecting
+                        setTimeout(() => {
+                            window.location.href = "../contactUs.html"; // Change this to your actual Contact Us page URL
+                        }, 2000);
+                    } else {
+                        showErrorMessage();
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
                     showErrorMessage();
-                }
-            })
-            .catch(error => {
-                console.error("Error:", error);
-                showErrorMessage();
-            });
+                });
+        });
+
+        function showSuccessMessage() {
+            let msgBox = document.createElement("div");
+            msgBox.textContent = "✅ Thank you! Your form has been submitted successfully.";
+            msgBox.style.position = "fixed";
+            msgBox.style.top = "50%";
+            msgBox.style.left = "50%";
+            msgBox.style.transform = "translate(-50%, -50%)";
+            msgBox.style.background = "#28a745";
+            msgBox.style.color = "#fff";
+            msgBox.style.padding = "15px 25px";
+            msgBox.style.fontSize = "18px"; // Increase font size for mobile
+            msgBox.style.textAlign = "center";
+            msgBox.style.borderRadius = "10px";
+            msgBox.style.boxShadow = "0px 5px 15px rgba(0,0,0,0.2)";
+            msgBox.style.zIndex = "10000";
+            msgBox.style.width = "80%";
+            msgBox.style.maxWidth = "400px"; // Ensures it's readable on mobile
+            msgBox.style.transition = "opacity 0.3s ease-in-out"; // Smooth fade effect
+
+            document.body.appendChild(msgBox);
+
+            // Ensure message stays for 2 seconds before disappearing
+            setTimeout(() => {
+                msgBox.style.opacity = "0";
+                setTimeout(() => {
+                    msgBox.remove();
+                }, 300); // Smooth fade-out
+            }, 2000);
+        }
+
+        function showErrorMessage() {
+            let msgBox = document.createElement("div");
+            msgBox.textContent = "❌ Error submitting form. Please try again.";
+            msgBox.style.position = "fixed";
+            msgBox.style.top = "50%";
+            msgBox.style.left = "50%";
+            msgBox.style.transform = "translate(-50%, -50%)";
+            msgBox.style.background = "#dc3545";
+            msgBox.style.color = "#fff";
+            msgBox.style.padding = "15px 25px";
+            msgBox.style.fontSize = "18px";
+            msgBox.style.textAlign = "center";
+            msgBox.style.borderRadius = "10px";
+            msgBox.style.boxShadow = "0px 5px 15px rgba(0,0,0,0.2)";
+            msgBox.style.zIndex = "10000";
+            msgBox.style.width = "80%";
+            msgBox.style.maxWidth = "400px";
+            msgBox.style.transition = "opacity 0.3s ease-in-out";
+
+            document.body.appendChild(msgBox);
+
+            setTimeout(() => {
+                msgBox.style.opacity = "0";
+                setTimeout(() => {
+                    msgBox.remove();
+                }, 300);
+            }, 3000);
+        }
     });
+</script>
 
-    function showSuccessMessage() {
-        let msgBox = document.createElement("div");
-        msgBox.textContent = "✅ Thank you! Your form has been submitted successfully.";
-        msgBox.style.position = "fixed";
-        msgBox.style.top = "20px";
-        msgBox.style.left = "50%";
-        msgBox.style.transform = "translateX(-50%)";
-        msgBox.style.background = "#28a745";
-        msgBox.style.color = "#fff";
-        msgBox.style.padding = "10px 20px";
-        msgBox.style.borderRadius = "5px";
-        msgBox.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.1)";
-        msgBox.style.zIndex = "1000";
-
-        document.body.appendChild(msgBox);
-
-        setTimeout(() => {
-            msgBox.remove();
-        }, 2000);
-    }
-
-    function showErrorMessage() {
-        let msgBox = document.createElement("div");
-        msgBox.textContent = "❌ Error submitting form. Please try again.";
-        msgBox.style.position = "fixed";
-        msgBox.style.top = "20px";
-        msgBox.style.left = "50%";
-        msgBox.style.transform = "translateX(-50%)";
-        msgBox.style.background = "#dc3545";
-        msgBox.style.color = "#fff";
-        msgBox.style.padding = "10px 20px";
-        msgBox.style.borderRadius = "5px";
-        msgBox.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.1)";
-        msgBox.style.zIndex = "1000";
-
-        document.body.appendChild(msgBox);
-
-        setTimeout(() => {
-            msgBox.remove();
-        }, 2000);
-    }
-});
