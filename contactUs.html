@@ -283,14 +283,14 @@
             <!-- ===============================================================================contact details grid Section=============================================================================== -->
 
                 <section>
-                    <div class="las_contact_form" data-aos="fade-up" data-aos-delay="2200" data-aos-duration="1000">
+                    <div class="las_contact_form"  data-aos="fade-up" data-aos-delay="2200" data-aos-duration="1000">
                         <div class="container">
                             <div class="las_contact_form_i">
                                 <div class="las_map_address">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4824.9034800208965!2d77.6616475!3d12.954260399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae132a9e31f07f%3A0x4cddc5201aecfa29!2sLittleAce%20Sports%20Pvt%20Ltd!5e1!3m2!1sen!2sin!4v1737306575623!5m2!1sen!2sin"
                                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
-                                <form method="post" action="https://script.google.com/macros/s/AKfycbzTpC-evoCj5Qm8IabAnVcDdfGCKams1G32R9U76CaFVpvYediTPeBbRwi48y_xc7bx/exec">
+                                <form id="contactForm" method="post" action="https://script.google.com/macros/s/AKfycbzTpC-evoCj5Qm8IabAnVcDdfGCKams1G32R9U76CaFVpvYediTPeBbRwi48y_xc7bx/exec">
                                     <div class="mb-3 mt-3">
                                         <input type="text" class="form-control poppins-light" id="Name" placeholder="Enter your name" name="Name" required>
                                     </div>
@@ -301,7 +301,7 @@
                                         <input type="number" class="form-control poppins-light" id="Number" placeholder="Enter your phone number" name="Number" required>
                                     </div>
                                     <textarea type="text" class="form-control poppins-light" rows="5" id="Message" placeholder="Enter your message" name="Message" required></textarea>
-                                    <button type="submit" class="las_btn2">Submit</button>
+                                    <button type="submit" class="las_btn2" id="submit_las">Submit</button>
                                 </form>
                             </div>
                         </div>
@@ -406,6 +406,10 @@
 
             <!-- ===============================================================================Footer Section=============================================================================== -->
         </div>
+
+        <script>
+            
+        </script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/script.js"></script>
         <script>
