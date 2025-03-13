@@ -193,3 +193,12 @@ a{
   font-size: 24px;
 }
 
+.las_faq_addon_img{
+  position: fixed;
+  top: 30%;
+  right: -7%;
+}
+.las_faq_addon_img img{
+  width:50%;
+}
+

@@ -66,6 +66,7 @@
 .las_header_menu{
     background:#ffffff;
     padding:10px 0px;
+    border-bottom: 1px solid #e8e8e8;
 }
 .las_header_menu .row{
     align-items: center;
@@ -194,6 +195,7 @@
     display: flex;
     align-items: center;
 }
+
 .las_hero_content .las_hero_cnt_p1{
     color:#ffffffd1;
     text-align: center !important;
@@ -266,6 +268,16 @@
 /* ==========================what we offer Section===================== */
 .las_what_we_offer{
     padding:100px 0px;
+    position: relative;
+}
+.las_video_addon_img{
+    position: absolute;
+    top: 6%;
+    left: -1.5%;
+}
+.las_video_addon_img img{
+    width:60%;
+    transform: scaleX(-1);
 }
 .las_service_heading .las_h{
     font-size: 30px;
@@ -374,7 +386,9 @@
 
 .las_faq{
     padding:50px 0px;
+    position: relative;
 }
+
 .las_faq_heading .las_h{
     font-size: 30px;
     text-align: center;
@@ -417,6 +431,7 @@
     height: fit-content;
     padding:50px 0px;
 }
+
 .las_video_sec_heading h2{
     text-align: center;
 }
@@ -541,6 +556,9 @@
     .las_footer_QL{
         padding-left:0;
         margin-left:0;
+    }
+    .las_video_addon_img{
+        display:none;
     }
    
 }

@@ -66,6 +66,7 @@
 .las_header_menu{
     background:#ffffff;
     padding:10px 0px;
+    border-bottom: 1px solid #e8e8e8;
 }
 .las_header_menu .row{
     align-items: center;
