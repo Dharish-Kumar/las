@@ -122,12 +122,18 @@ a{
     color: #000000 !important;
 }
 
-@media only screen and (max-width:600px){
-    .las_p{
-        font-size: 13px;
-    }
+@media only screen and (min-width:1201px) and (max-width:1399px){
+  .las_faq_addon_img {
+    top: 30%;
+    right: -9% !important;
+  }
 }
-
+@media only screen and (min-width:1001px) and (max-width:1199px){
+  .las_faq_addon_img {
+    top: 30%;
+    right: -10% !important;
+  }
+}
 @media only screen and (min-width:801px) and (max-width:1000px){
     .las_btn1 {
       width: 100px;
@@ -144,6 +150,10 @@ a{
       width: 100px;
       height: 40px;
       font-size: 12px;
+    }
+    .las_faq_addon_img {
+      top: 30%;
+      right: -12% !important;
     }
 }
 
@@ -163,6 +173,33 @@ a{
     width: 90px;
     height: 35px;
     font-size: 12px;
+  }
+  .las_faq_addon_img {
+    top: 30%;
+    right: -17% !important;
+  }
+}
+@media only screen and (max-width:600px){
+  .las_p{
+      font-size: 13px;
+  }
+}
+@media only screen and (min-width:401px) and (max-width:599px){
+  .las_faq_addon_img {
+    top: 30%;
+    right: -35% !important;
+  }
+  .las_faq_addon_img img{
+    width:35% !important;
+  }
+}
+@media only screen and (max-width:400px){
+  .las_faq_addon_img {
+    top: 30%;
+    right: -39% !important;
+  }
+  .las_faq_addon_img img{
+    width:35% !important;
   }
 }
 
@@ -197,6 +234,7 @@ a{
   position: fixed;
   top: 30%;
   right: -7%;
+  z-index:1;
 }
 .las_faq_addon_img img{
   width:50%;
